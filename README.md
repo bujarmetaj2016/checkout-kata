@@ -1,4 +1,4 @@
-###### Using Build patteren to add Price informations and offers.
+###### Using build patteren to add price information and offers.
 
 ###### Example from table is used to build Price informations.
 
