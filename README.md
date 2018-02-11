@@ -23,7 +23,7 @@ final PricingFactory factory = new PricingFactoryBuilder()
     .and()
         .productName("D")
         .price(15L)
-    .build();"# checkout-kata" 
+    .build();
 ```
 ###### Using transaction to scan and checkout
 
