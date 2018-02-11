@@ -2,6 +2,8 @@ Using Build patteren to add Price informations and offers.
 
 Example from table is used to build Price informations.
 
+Pricing Information Builder:
+```
 new PricingFactoryBuilder()
     .informations()
         .productName("A")
@@ -22,3 +24,4 @@ new PricingFactoryBuilder()
         .productName("D")
         .price(15L)
     .build();"# checkout-kata" 
+```
