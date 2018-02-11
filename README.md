@@ -1,10 +1,10 @@
-Using Build patteren to add Price informations and offers.
+###### Using Build patteren to add Price informations and offers.
 
-Example from table is used to build Price informations.
+###### Example from table is used to build Price informations.
 
-Pricing Information Builder:
+###### Pricing Information Builder:
 ```
-new PricingFactoryBuilder()
+final PricingFactory factory = new PricingFactoryBuilder()
     .informations()
         .productName("A")
         .price(50L)
@@ -24,4 +24,12 @@ new PricingFactoryBuilder()
         .productName("D")
         .price(15L)
     .build();"# checkout-kata" 
+```
+###### Using transaction to scan and checkout
+
+```
+final Long total = transaction.scan("B")
+            .scan("A")
+            .scan("B")
+            .checkout(pricingFactory.getPricingInformations().getPricingInformations());
 ```
